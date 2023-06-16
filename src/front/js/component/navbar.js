@@ -6,7 +6,7 @@ import Gruitalinea from "../../img/gruitalinea.png";
 export const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-danger">
+      <nav className="navbar navbar-expand-lg navbar-light bg-danger sticky-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img src={Gruitalinea} className="gruita" alt="grualinea" />
@@ -68,53 +68,34 @@ export const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav nav-text">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Features
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link active m-5 text-danger"
+                  aria-current="page"
                   href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
                 >
-                  Dropdown link
+                  <span>Inicio</span>
                 </a>
-                <ul
-                  className="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
+              </li>
+              <li className="nav-item">
+                <a className="nav-link m-5 text-danger" href="#">
+                  <span>Servicios</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link m-5 text-danger" href="#">
+                  <span>Grúas</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link active m-5 text-danger"
+                  aria-current="page"
+                  href="#"
                 >
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
+                  <span>Nosotros</span>
+                </a>
               </li>
             </ul>
           </div>
