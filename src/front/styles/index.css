@@ -1,3 +1,22 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+.logo {
+  height: 100px;
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+.navbar {
+  display: flex;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+}
+.icons {
+  margin-left: 480px;
+  font-size: 25px;
+}
+.gruita {
+  height: 50px;
+  width: 100px;
+  margin-left: 650px;
+}
