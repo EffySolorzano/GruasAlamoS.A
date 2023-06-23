@@ -2,19 +2,21 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
-import Finalfinal from "../../img/finalfinal.jpg";
+import Segundo from "../../img/segundo.jpg";
+import Towing from "../../img/Towing.png";
+import Towingg from "../../img/Towingg.png";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
 
   return (
-    <div className="text-center mt-5">
-      <img src={Finalfinal} className="headerlp" alt="headerlp" />
-      <div className="boton">
-        <Link to="/contacto">
-          <button className="btn btn-danger m-5 homebtn">Contacto</button>
-        </Link>
+    <>
+      <div className="text-center mt-5">
+        <img src={Segundo} className="segundo" alt="" />
       </div>
-    </div>
+      <div>
+        <img src={Towing} className="towing" alt="towing" />
+      </div>
+    </>
   );
 };

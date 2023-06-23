@@ -60,7 +60,10 @@ export const Navbar = () => {
           </div>
         </div>
       </nav>
-      <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <nav
+        className="navbar navbar-expand-lg navbar-light bg-white mt-0 sticky-top"
+        id="secondnav"
+      >
         <div className="container-fluid">
           <Link to="/">
             <img src={GruasAlamo} className="img-fluid logo" alt="logo" />
@@ -107,7 +110,7 @@ export const Navbar = () => {
                   data-font="Roboto"
                   data-icons="Climacons Animated"
                   data-mode="Current"
-                  data-theme="blue-mountains"
+                  /*data-theme="blue-mountains"*/
                 ></a>
               </li>
             </ul>
