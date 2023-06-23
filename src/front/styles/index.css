@@ -1,28 +1,35 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+
+body {
+  background-image: url("https://dl.dropboxusercontent.com/s/y1s9m3q5uk10kcg/background.jpg");
+  background-size: 100% 150%;
+}
 .logo {
-  height: 150px;
-  width: 150px;
+  height: 90px;
+  width: 90px;
   margin-left: 70px;
   margin-right: 130px;
 }
 .navbar {
-  display: flex;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+  width: 1290px;
+  margin-top: 25px;
+  margin-left: 67px;
 }
 .icons {
-  margin-left: 480px;
+  margin-left: 380px;
   font-size: 25px;
 }
 .gruita {
   height: 50px;
   width: 125px;
-  margin-left: 390px;
+  margin-left: 290px;
 }
 .nav-text {
   font-family: "Dosis", sans-serif;
-  font-size: 35px;
+  font-size: 20px;
 }
 .nav-text span {
   display: inline-block;
@@ -49,9 +56,9 @@
   margin-left: 1%;
 }
 .weatherwidget-io {
-  width: 250px;
-  margin-top: 25px;
-  margin-right: 75px;
+  width: 400px;
+  margin-top: 20px;
+  margin-right: 40px;
   border-radius: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
 }
@@ -69,4 +76,23 @@
 .contact-container {
   margin-left: 450px;
   width: 550px;
+}
+.segundo {
+  position: relative;
+  width: 1290px;
+  height: 800px;
+  margin-top: -210px;
+  filter: drop-shadow(20px 20px 4px rgba(0.2, 0.2, 0.2, 0.2));
+  z-index: -1;
+}
+#secondnav {
+  height: 100px;
+}
+.towing {
+  position: relative;
+  z-index: 2;
+  height: 550px;
+  margin-top: -630px;
+  margin-left: 750px;
+  filter: drop-shadow(20px 20px 4px rgba(0.2, 0.2, 0.2, 0.2));
 }

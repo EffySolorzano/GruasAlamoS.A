@@ -11,13 +11,12 @@ const Contacto = () => {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSendEmail = async (e) => {
     e.preventDefault();
 
-    if (!fullname || !email || !phone || !subject || !message) {
+    if (!fullname || !email || !phone || !message) {
       Swal.fire({
         icon: "error",
         title: "Uuups...",
@@ -27,13 +26,7 @@ const Contacto = () => {
     }
 
     try {
-      const response = await actions.sendEmail(
-        fullname,
-        email,
-        phone,
-        subject,
-        message
-      );
+      const response = await actions.sendEmail(fullname, email, phone, message);
 
       console.log(response);
 
@@ -123,28 +116,6 @@ const Contacto = () => {
                     type="text"
                     onChange={(e) => {
                       setPhone(e.target.value);
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="form-group">
-              <label className="col-md-12 control-label pt-2 pb-2">
-                Asunto:
-              </label>
-              <div className="col-md-12 inputGroupContainer">
-                <div className="input-group">
-                  <span className="input-group-addon">
-                    <i className="glyphicon glyphicon-home"></i>
-                  </span>
-                  <input
-                    name="subject"
-                    placeholder="asunto"
-                    className="form-control p-2"
-                    type="text"
-                    onChange={(e) => {
-                      setSubject(e.target.value);
                     }}
                   />
                 </div>
