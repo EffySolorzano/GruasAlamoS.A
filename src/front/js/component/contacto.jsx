@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { userActions } from "../store/usuario.js";
 import Gruacontacto from "../../img/gruacontacto.png";
+import Segundo from "../../img/segundo.jpg";
 
 const Contacto = () => {
   const actions = userActions((actions) => actions.userActions);
@@ -43,127 +44,125 @@ const Contacto = () => {
 
   return (
     <>
-      <div className="contact-container p-3 mt-5 d-flex flex-column justify-content-center bg-light rounded-3 border border-secondary-emphasis">
-        <center>
-          <img
-            src={Gruacontacto}
-            className="img-fluid mt-2 justify-content-center towline"
-          />
-        </center>
-        <form className="form-horizontal" method="post" id="contact_form">
-          <fieldset>
-            <h4 className="title-add d-flex justify-content-center">
-              Escribe tu mensaje
-            </h4>
+      <div className="img-fluid text-center mt-5">
+        <img src={Segundo} className="img-fluid segundo" alt="segundo" />
 
-            <div className="form-group">
-              <label className="col-md-12 control-label pt-2 pb-2">
-                Nombre Completo:
-              </label>
-              <div className="col-md-12 inputGroupContainer">
-                <div className="input-group">
-                  <span className="input-group-addon">
-                    <i className="glyphicon glyphicon-user"></i>
-                  </span>
-                  <input
-                    name="fullname"
-                    placeholder="nombre completo"
-                    className="form-control p-2"
-                    type="text"
-                    onChange={(e) => {
-                      setFullname(e.target.value);
-                    }}
-                  />
+        <div className="contact-container p-3 d-flex flex-column justify-content-center bg-light rounded-3 border border-secondary-emphasis">
+          <center>
+            <img
+              src={Gruacontacto}
+              className="img-fluid mt-2 justify-content-center towline"
+            />
+          </center>
+          <form className="form-horizontal" method="post" id="contact_form">
+            <fieldset>
+              <div className="form-group">
+                <label className="col-md-12 control-label pt-2 pb-2">
+                  Nombre:
+                </label>
+                <div className="col-md-12 inputGroupContainer">
+                  <div className="input-group">
+                    <span className="input-group-addon">
+                      <i className="glyphicon glyphicon-user"></i>
+                    </span>
+                    <input
+                      name="fullname"
+                      placeholder="nombre completo"
+                      className="form-control p-2"
+                      type="text"
+                      onChange={(e) => {
+                        setFullname(e.target.value);
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="form-group">
-              <label className="col-md-12 control-label pt-2 pb-2">
-                Email:
-              </label>
-              <div className="col-md-12 inputGroupContainer">
-                <div className="input-group">
-                  <span className="input-group-addon">
-                    <i className="glyphicon glyphicon-envelope"></i>
-                  </span>
-                  <input
-                    name="email"
-                    placeholder="email"
-                    className="form-control p-2"
-                    type="text"
-                    onChange={(e) => {
-                      setEmail(e.target.value);
-                    }}
-                  />
+              <div className="form-group">
+                <label className="col-md-12 control-label pt-2 pb-2">
+                  Email:
+                </label>
+                <div className="col-md-12 inputGroupContainer">
+                  <div className="input-group">
+                    <span className="input-group-addon">
+                      <i className="glyphicon glyphicon-envelope"></i>
+                    </span>
+                    <input
+                      name="email"
+                      placeholder="email"
+                      className="form-control p-2"
+                      type="text"
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="form-group">
-              <label className="col-md-12 control-label pt-2 pb-2">
-                Teléfono:
-              </label>
-              <div className="col-md-12 inputGroupContainer">
-                <div className="input-group">
-                  <span className="input-group-addon">
-                    <i className="glyphicon glyphicon-earphone"></i>
-                  </span>
-                  <input
-                    name="phone"
-                    placeholder="teléfono"
-                    className="form-control p-2"
-                    type="text"
-                    onChange={(e) => {
-                      setPhone(e.target.value);
-                    }}
-                  />
+              <div className="form-group">
+                <label className="col-md-12 control-label pt-2 pb-2">
+                  Teléfono:
+                </label>
+                <div className="col-md-12 inputGroupContainer">
+                  <div className="input-group">
+                    <span className="input-group-addon">
+                      <i className="glyphicon glyphicon-earphone"></i>
+                    </span>
+                    <input
+                      name="phone"
+                      placeholder="teléfono"
+                      className="form-control p-2"
+                      type="text"
+                      onChange={(e) => {
+                        setPhone(e.target.value);
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="form-group">
-              <label className="col-md-12 control-label pt-2 pb-2">
-                Mensaje:
-              </label>
-              <div className="col-md-12 inputGroupContainer">
-                <div className="input-group">
-                  <span className="input-group-addon">
-                    <i className="glyphicon glyphicon-pencil"></i>
-                  </span>
-                  <textarea
-                    className="form-control p-2"
-                    name="Message"
-                    placeholder="escribe tu mensaje aquí"
-                    onChange={(e) => {
-                      setMessage(e.target.value);
-                    }}
-                  ></textarea>
+              <div className="form-group">
+                <label className="col-md-12 control-label pt-2 pb-2">
+                  Mensaje:
+                </label>
+                <div className="col-md-12 inputGroupContainer">
+                  <div className="input-group">
+                    <span className="input-group-addon">
+                      <i className="glyphicon glyphicon-pencil"></i>
+                    </span>
+                    <textarea
+                      className="form-control p-2"
+                      name="Message"
+                      placeholder="escribe tu mensaje aquí"
+                      onChange={(e) => {
+                        setMessage(e.target.value);
+                      }}
+                    ></textarea>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="form-group">
-              <label className="col-md-12 control-label"></label>
-              <div className="col-md-12 d-flex justify-content-center mb-2">
-                <button
-                  type="submit"
-                  className="btn btn-danger ms-3"
-                  onClick={handleSendEmail}
-                >
-                  Send
-                </button>
-                <Link to="/">
-                  <button type="button" className="btn btn-secondary ms-3">
-                    Go back
+              <div className="form-group">
+                <label className="col-md-12 control-label"></label>
+                <div className="col-md-12 d-flex justify-content-center mb-2">
+                  <button
+                    type="submit"
+                    className="btn btn-danger ms-3"
+                    onClick={handleSendEmail}
+                  >
+                    Send
                   </button>
-                </Link>
+                  <Link to="/">
+                    <button type="button" className="btn btn-secondary ms-3">
+                      Go back
+                    </button>
+                  </Link>
+                </div>
               </div>
-            </div>
-          </fieldset>
-        </form>
+            </fieldset>
+          </form>
+        </div>
       </div>
-
-      <div className="container-footer"></div>
     </>
   );
 };
