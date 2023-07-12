@@ -4,7 +4,6 @@ import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import Segundo from "../../img/segundo.jpg";
 import Towing from "../../img/Towing.png";
-import Towingg from "../../img/Towingg.png";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
