@@ -1,11 +1,11 @@
 {
   "functions": {
-    "api/serverless.py": {
+    "src/api/serverless.py": {
       "runtime": "vercel-python@0.27.0"
     }
   },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/serverless.py" },
-    { "source": "/(.*)", "destination": "/serverless.py" }
+    { "source": "/api/(.*)", "destination": "/src/api/serverless.py" },
+    { "source": "/(.*)", "destination": "/src/serverless.py" }
   ]
 }
