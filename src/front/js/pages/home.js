@@ -11,7 +11,7 @@ export const Home = () => {
   return (
     <>
       <div className="img-fluid text-center mt-5">
-        <img src={Segundo} className="segundo" alt="" />
+        <img src={Segundo} className="segundo fixed" alt="" />
       </div>
       <div>
         <img src={Towing} className="img-fluid towing" alt="towing" />
@@ -21,9 +21,8 @@ export const Home = () => {
       </div>
       <div className="home">
         <h1>cualquier hora, en cualquier lugar.</h1>
-      </div>
-      <div className="title">
-        <h2>Grúas Alamo de Venezuela</h2>
+        <br />
+        <h2 className="text-danger alamo">Gruas Alamo de Venezuela</h2>
       </div>
     </>
   );

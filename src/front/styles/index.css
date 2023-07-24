@@ -72,9 +72,9 @@ body {
 /*-----------2nd BACKGROUND IMAGE-------------*/
 .segundo {
   position: relative;
-  width: 1290px;
-  height: 800px;
-  margin-top: -210px;
+  width: 90.5%;
+  max-height: 800px;
+  margin: -220px auto 0;
   filter: drop-shadow(20px 20px 4px rgba(0.2, 0.2, 0.2, 0.2));
   z-index: -1;
 }
@@ -244,5 +244,24 @@ h1 {
 }
 /*-------FOOTER---------*/
 .footer {
-  margin-top: 835px;
+  margin-top: 300px;
 }
+/*Animation 3*/
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.alamo {
+  position: absolute;
+  left: 23%;
+  bottom: 10%;
+  transform: translate(-50%, -50%);
+  animation: slideUp 1.5s ease-in-out forwards;
+}
+/*Servicios*/

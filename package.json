@@ -81,6 +81,7 @@
     "react-polyfills": "0.0.1",
     "react-router-dom": "^6.3.0",
     "react-transition-group": "^4.4.5",
-    "sweetalert2": "^11.7.12"
+    "sweetalert2": "^11.7.12",
+    "vercel": "^31.0.2"
   }
 }
