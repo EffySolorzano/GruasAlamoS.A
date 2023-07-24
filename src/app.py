@@ -2,7 +2,7 @@
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
 """
 import os
-from flask import Flask, request, jsonify, url_for, send_from_directory, render_template, db_url
+from flask import Flask, request, jsonify, url_for, send_from_directory, render_template
 
 from flask_migrate import Migrate
 from flask_swagger import swagger
