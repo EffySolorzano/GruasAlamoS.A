@@ -21,9 +21,8 @@ export const Home = () => {
       </div>
       <div className="home">
         <h1>cualquier hora, en cualquier lugar.</h1>
-      </div>
-      <div className="title">
-        <h2></h2>
+        <br />
+        <h2 className="text-danger alamo">Gruas Alamo de Venezuela</h2>
       </div>
     </>
   );

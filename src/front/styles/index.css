@@ -244,5 +244,24 @@ h1 {
 }
 /*-------FOOTER---------*/
 .footer {
-  margin-top: 880px;
+  margin-top: 300px;
 }
+/*Animation 3*/
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.alamo {
+  position: absolute;
+  left: 23%;
+  bottom: 10%;
+  transform: translate(-50%, -50%);
+  animation: slideUp 1.5s ease-in-out forwards;
+}
+/*Servicios*/
