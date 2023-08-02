@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Segundo from "../../img/segundo.jpg";
+import Placeholder from "../../img/placeholder.jpg";
 
 const Servicios = () => {
   return (
@@ -18,13 +19,13 @@ const Servicios = () => {
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="..." className="d-block w-70" alt="..." />
+            <img src={Placeholder} className="img-fluid servicios" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src="..." className="d-block w-70" alt="..." />
+            <img src={Placeholder} className="img-fluid servicios" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src="..." className="d-block w-70" alt="..." />
+            <img src={Placeholder} className="img-fluid servicios" alt="..." />
           </div>
         </div>
         <button
@@ -34,10 +35,10 @@ const Servicios = () => {
           data-bs-slide="prev"
         >
           <span
-            className="carousel-control-prev-icon"
+            className=" carousel-control-prev-icon"
             aria-hidden="true"
           ></span>
-          <span className="visually-hidden">Previous</span>
+          <span className=" visually-hidden">Previous</span>
         </button>
         <button
           className="carousel-control-next"

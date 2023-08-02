@@ -72,11 +72,12 @@ body {
 /*-----------2nd BACKGROUND IMAGE-------------*/
 .segundo {
   position: relative;
-  width: 90.5%;
+  width: 92.5%;
   max-height: 800px;
   margin: -220px auto 0;
   filter: drop-shadow(20px 20px 4px rgba(0.2, 0.2, 0.2, 0.2));
   z-index: -1;
+  margin-left: 30px;
 }
 /*--------------3rd background image-------------*/
 .towing {
@@ -265,3 +266,9 @@ h1 {
   animation: slideUp 1.5s ease-in-out forwards;
 }
 /*Servicios*/
+.servicios {
+  display: block;
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
