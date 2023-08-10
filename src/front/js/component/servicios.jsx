@@ -1,14 +1,17 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Segundo from "../../img/segundo.jpg";
-import Placeholder from "../../img/placeholder.jpg";
+import Remolque from "../../img/remolque.jpg";
+import Rescate from "../../img/rescate.jpg";
+import Transporte from "../../img/transporte.jpg";
+import Especializado from "../../img/especializado.jpg";
 
 const Servicios = () => {
   return (
     <>
       <div
         className="img-fluid text-center mt-5"
-        style={{ marginBottom: "-315px" }}
+        style={{ marginBottom: "-600px" }}
       >
         <img src={Segundo} className="segundo" alt="" />
       </div>
@@ -19,13 +22,20 @@ const Servicios = () => {
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={Placeholder} className="img-fluid servicios" alt="..." />
+            <img src={Remolque} className="img-fluid servicios" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={Placeholder} className="img-fluid servicios" alt="..." />
+            <img src={Rescate} className="img-fluid servicios" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={Placeholder} className="img-fluid servicios" alt="..." />
+            <img src={Transporte} className="img-fluid servicios" alt="..." />
+          </div>
+          <div className="carousel-item">
+            <img
+              src={Especializado}
+              className="img-fluid servicios"
+              alt="..."
+            />
           </div>
         </div>
         <button
