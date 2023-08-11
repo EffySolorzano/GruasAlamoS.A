@@ -6,7 +6,7 @@ import Rescate from "../../img/rescate.png";
 import Transporte from "../../img/transporte.png";
 import Especializado from "../../img/especializado.png";
 
-const Servicios = () => {
+const Gruas = () => {
   return (
     <>
       <div
@@ -67,4 +67,4 @@ const Servicios = () => {
   );
 };
 
-export default Servicios;
+export default Gruas;
