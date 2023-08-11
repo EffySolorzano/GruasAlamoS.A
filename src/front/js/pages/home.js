@@ -10,7 +10,7 @@ export const Home = () => {
 
   return (
     <>
-      <div className="img-fluid text-center mt-5">
+      <div className="img-fluid text-center mt-5 sticky-footer">
         <img src={Segundo} className="segundo fixed" alt="" />
       </div>
       <div>
