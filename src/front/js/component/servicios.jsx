@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Segundo from "../../img/segundo.jpg";
-import Remolque from "../../img/remolque.jpg";
+import Remolque from "../../img/remolque.png";
 import Rescate from "../../img/rescate.jpg";
 import Transporte from "../../img/transporte.jpg";
 import Especializado from "../../img/especializado.jpg";
