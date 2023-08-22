@@ -1,10 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Segundo from "../../img/segundo.jpg";
-import Remolque from "../../img/remolque.png";
-import Rescate from "../../img/rescate.png";
-import Transporte from "../../img/transporte.png";
-import Especializado from "../../img/especializado.png";
+import Fordcardd from "../../img/fordcardd.png";
+import Chevrolet from "../../img/chevrolet.png";
 
 const Gruas = () => {
   return (
@@ -22,20 +20,10 @@ const Gruas = () => {
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={Remolque} className="img-fluid servicios" alt="..." />
+            <img src={Fordcardd} className="img-fluid servicios" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={Rescate} className="img-fluid servicios" alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src={Transporte} className="img-fluid servicios" alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img
-              src={Especializado}
-              className="img-fluid servicios"
-              alt="..."
-            />
+            <img src={Chevrolet} className="img-fluid servicios" alt="..." />
           </div>
         </div>
         <button

@@ -5,6 +5,7 @@ import Swal from "sweetalert2";
 import { userActions } from "../store/usuario.js";
 import Gruacontacto from "../../img/gruacontacto.png";
 import Segundo from "../../img/segundo.jpg";
+import Footerr from "./footerr.jsx";
 
 const Contacto = () => {
   const actions = userActions((actions) => actions.userActions);
@@ -162,6 +163,9 @@ const Contacto = () => {
             </fieldset>
           </form>
         </div>
+      </div>
+      <div>
+        <Footerr />
       </div>
     </>
   );
