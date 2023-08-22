@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Segundo from "../../img/segundo.jpg";
+import Gruasa from "../../img/gruasa.png";
 
 const Nosotros = () => {
   return (
