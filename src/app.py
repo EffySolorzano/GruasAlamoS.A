@@ -23,7 +23,11 @@ db_url = os.getenv("DATABASE_URL")
 if db_url is not None:
     app.config['SQLALCHEMY_DATABASE_URI'] = db_url
 else:
-    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:////tmp/test.db"
+    # Replace 'project_db' with your actual Heroku config var name
+    db_url = os.getenv("project_db")
+    if db_url is None:
+        raise ValueError("DATABASE_URL or project_db environment variable not set")
+    app.config['SQLALCHEMY_DATABASE_URI'] = db_url
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 MIGRATE = Migrate(app, db, compare_type=True)
